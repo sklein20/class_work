@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Demo on HTML</title>
+    </head>
+    <body>
+        <header id="page_header">
+            <h1>Demo on HTML Multimedia Elements & More</h1>
+            <nav id="nav_bar">
+                <menu>
+                    <li><a href="#multimedia">HTML Multimedia</a></li>
+                    <li><a href="#tables">HTML Tables</a></li>
+                    <li><a href="#usefultags">Some Useful Tags</a></li>
+                </menu>
+            </nav>
+
+            
+        </header>
+
+        <main id="page_main_content">
+            <section id="multimedia">
+                <div id="audio_files">
+                    <h2>Demo of Including an Audio File</h2>
+                    <audio src="audio/file_example_MP3_2MG.mp3#t=24,30" controls>
+                        Audio File Not Supported by Your Browser.
+                    </audio>
+                </div>
+                <hr>
+                <div id="video_files">
+                    <h2>Demo of Including a Video File</h2>
+                    <video src="videos/file_example_MOV_1280_1_4MB.mov" controls width="30%">
+                        Your Browser Does Not Support the Video Format.
+                    </video>
+                    <!--<video>
+                        <source media="(min-width: )" srcset="">
+                        </source>
+                    </video>-->
+                    <picture> <!-- Tag used for grouping -->
+
+                    </picture>
+                </div>
+            </section>
+
+            <section id="tables">
+                <h2>Demo on HTML Tables</h2>
+                <p>Below is an example of an HTML table.</p>
+
+                <table id="html_table_table1" border="2"> <!-- Tables are consisted of only rows -->
+                    <tr> <!-- Each row contains table data -->
+                        <th>Menu ID</th> <!--table headings-->
+                        <th>Menu Items</th>
+                        <th>Price</th>
+                    </tr>
+                <!--Row 2-->
+                    <tr>
+                        <td>1</td>
+                        <td>Pizza</td>
+                        <td>$10.00</td>
+                    </tr>
+                <!--Row 3-->
+                    <tr>
+                        <td>2</td>
+                        <td>Gnocchi</td>
+                        <td>$12.99</td>
+                    </tr>
+                </table>
+
+                
+                <table id="html_table_table2" border="2">
+                    <caption>Table: Demo of Rowspan</caption>
+                    <tr>
+                        <th>Child Name</th>
+                        <th>Parent Name</th>
+                    </tr>
+            
+                    <tr>
+                        <td rowspan="2">John</td> 
+                        <td>Jill</td>
+                    </tr>
+
+                    <tr>
+                        <td>Jack</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id="usefultags">
+                <h2>Some more useful HTML tags</h2>
+                <h3>Some block tags</h3>
+                <h4>The blockquote element</h4>
+                <blockquote cite="https://google.com">
+                    "YOLO" - The Web
+                </blockquote>
+                <h4>The summary and details element</h4>
+                <summary>
+                    Click Here for game results, Spoiler Alert!
+                    <details>Rams 50:2 Lions</details>
+                </summary>
+
+                <h3>Some inline tags</h3>
+                <h4>cite tag</h4>
+                The home page of OU is <cite>www.oakland.edu</cite>
+                <h4>The abbreviation tag</h4>
+                Few of the course codes  in OU are <abbr title="Computer Science">CSI</abbr>, 
+                <abbr title="Physics">PHY</abbr>, <abbr title="Engineering">EGR</abbr>
+
+                <h4>Subscript and superscript</h4>
+                <p>a <sup>2</sup> + b <sup>2</sup> + 2a*b = (a + b) <sup>2</sup></p>
+                <p>The molecular formula of water is H<sub>2</sub>O</p>
+
+                <h4>The code element</h4>
+                <code>C++ coding</code><br>
+                <code>
+                    cout &lt; &lt; Hello, World;
+                </code>
+
+                <h4>Time tag</h4>
+                Classes start this Fall from <time datetime="2021-09-02">SEP 02</time>
+
+                <h3>Tags that require JavaScript to be full functional</h3>
+                <h4>Button tag</h4>
+                <a href="#page_header">
+                    <button type="menu">Go to top</button>
+                </a>
+
+                <h4>The BDO tag</h4>
+                <bdo dir="ltr">This is left to right orientation</bdo> <br>
+                <bdo dir="rtl">This is right to left orientation</bdo>
+
+                <h4>the iframe element</h4>
+                <iframe src="https://www.oakland.edu" frameborder="1" width="30%">
+                    Sorry this page is not supported by your browser.
+                </iframe>
+
+
+                <h4>The progress and meter elements</h4>
+                <h5>The progress element</h5>
+                
+                <label for="survey_progress">Survey Progress</label>
+                <progress id="survey_progress" min=2 max=10 value=7>0.7</progress>
+
+            </section>
+        </main>
+        
+        <hr>
+
+        <footer id="page_footer">
+            <address>
+                115, Library Drive, Engineering Center <br>
+                Oakland University, Rochester, MI - 48309
+            </address>
+        </footer>
+    </body>
+</html>

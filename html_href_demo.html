@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML href tutorial</title>
+</head>
+<body>
+    <header id="page_header">
+        <h1>Tutorial and Demo on using HTML href links</h1>
+    </header>
+
+    <main>
+        <h2>Links are specified using the &lt;a&gt; tag</h2>
+        <p>The &lt;a&gt; tag is also known as the achor tag. A typical example of an achor link is shown below.</p>
+
+        <a href="https://www.oakland.edu">Oakland University</a>
+    </main>
+
+    <section>
+        <h2>Here is an example of the anchor tag with content being an image.</h2>
+        <figure>
+            <a href="https://oakland.edu" aria-label="Oakland University">
+                <img src="./images/OU-Logo.jpg" width="20%" alt="Oakland University Website" title="Click to visit OU Home Page">
+            </a>
+        </figure>
+    </section>
+
+    <div class="absolute_links">
+        <h2>Demo on Absolute Links</h2>
+        <p>For Absolute Links you will have to specify complete URL in the href component of the anchor tag. This includes HTTP or HTTPS and rest of the address.</p>
+        <p>The href for the following content has a full formed url - <a href="https://www.oakland.edu">Oakland University</a>. 
+            The specified address is https://www.oakland.edu 
+        </p>
+
+    </div>
+
+    <div class="relative_links">
+        <h2>Demo on Relative Links</h2>
+        <p>For relative links, you will only specify the file name for the href portion. </p>
+        <p>The href for the following content is a relative link - <a href="html_images.html">Demo on HTML Images</a>. 
+            The specified address is html_images.html, which is local to my working directory.  
+        </p>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <div class="relative_links_internal">
+        <h2>Demo on href to a location on the same page</h2>
+        <p>You can also link to different sections on the same page. This is done using the id attribute and the href syntax - "#id"</p>
+        <p>Below is an example of this action: </p>
+        <a href="#page_header">Click here to go to top of the web page.</a>
+    </div>
+
+    <div class="target_attribute">
+        <h2>Demo on Target Attributes used with anchor tags. </h2>
+        <p>Here we demo the use of different target attributes that can be used with anchor tag.</p>
+
+        <h3>Target Attribute - _self</h3>
+        <p>This is the default option. If you don't specify the target attribute this option is used. It opens the new resource in the same tab.</p>
+        <a href="https://oakland.edu" target="_self">Click here to visit Oakland University Home Page</a>
+
+        <h3>Target Attribute - _blank</h3>
+        <p>With the target attribute as _blank, the new resource will open in a new tab or window as shown below. </p>
+        <a href="https://oakland.edu" target="_blank">Click here to visit Oakland University Home Page in a New Window</a>
+    </div>
+
+    <div class="mailing_href">
+        <h2>How to Email using href</h2>
+        <p>You can email someone by invoking anchor tag and href. This is useful of contact pages. Below is the demo.</p>
+        <a href="mailto:sen@oakland.edu">Email Amartya Sen</a>
+    </div>
+    
+</body>
+</html>
